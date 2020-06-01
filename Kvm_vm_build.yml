@@ -8,7 +8,7 @@
 
 # Optional Vars are located in directory ansible-role-libvirt-vm/defaults/main.yml      
   vars:
-    cis_target_os_distribution: "RedHat" ### Example Var 
+##    cis_target_os_distribution: "RedHat" ### Example Var 
     libvirt_vm_default_console_log_dir: "/var/log/libvirt-consoles/"
 
     # The default location for libvirt images
