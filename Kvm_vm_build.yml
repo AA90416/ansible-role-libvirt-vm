@@ -9,3 +9,6 @@
       
   vars:
     cis_target_os_distribution: "RedHat" ### Example Var 
+    
+  roles:
+    Kvm_vm_build
