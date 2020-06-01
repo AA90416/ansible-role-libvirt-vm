@@ -1,1 +1,11 @@
-Add facing playbook
+###Add facing playbook with included role:
+
+---
+- hosts: #Add Host IP #localhost
+  connection: local
+  gather_facts: true
+  become: yes
+
+      
+  vars:
+    cis_target_os_distribution: "RedHat" ### Example Var 
