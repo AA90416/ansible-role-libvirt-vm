@@ -26,5 +26,11 @@
     # Path to cache downloaded images.
     libvirt_vm_image_cache_path: "{{ libvirt_image_cache_path }}"
     
+    # CPU architecture.
+    libvirt_vm_arch: x86_64
+
+
+
+    
   roles:
     Kvm_vm_build
