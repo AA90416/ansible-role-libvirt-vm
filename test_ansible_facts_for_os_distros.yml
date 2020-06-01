@@ -14,3 +14,12 @@
     - include_role:
         name: some_role
       when: "ansible_facts['os_family'] == 'RedHat'"
+      
+#To see what information is available, try the following in a play::
+
+#    - debug: var=ansible_facts
+
+#To see the 'raw' information as gathered::
+# ansible hostname -m setup
+# {{ ansible_facts['nodename'] }}
+# https://github.com/ansible/ansible/pull/44980/files
