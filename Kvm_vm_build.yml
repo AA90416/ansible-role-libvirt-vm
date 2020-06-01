@@ -6,9 +6,25 @@
   gather_facts: true
   become: yes
 
-      
+# Optional Vars are located in directory ansible-role-libvirt-vm/defaults/main.yml      
   vars:
     cis_target_os_distribution: "RedHat" ### Example Var 
+    libvirt_vm_default_console_log_dir: "/var/log/libvirt-consoles/"
+
+    # The default location for libvirt images
+    libvirt_volume_default_images_path: '/var/lib/libvirt/images'
+
+    # Default type for Libvirt volumes
+    libvirt_volume_default_type: volume
+
+    # The default format for Libvirt volumes.
+    libvirt_volume_default_format: qcow2
+
+    # The default device for Libvirt volumes.
+    libvirt_volume_default_device: disk
+
+    # Path to cache downloaded images.
+    libvirt_vm_image_cache_path: "{{ libvirt_image_cache_path }}"
     
   roles:
     Kvm_vm_build
